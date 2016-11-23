@@ -11,7 +11,7 @@ import cucumber.api.java.Before;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-		features = "User-Stories",
+		features = {"User-Stories"},
 		glue = { "stepDefinition"},
 		tags = { "@Positive" },
 		format = { "pretty", "html:target"})
