@@ -11,7 +11,7 @@ import cucumber.api.java.Before;
 public class TestBase {
 	
 	
-	static WebDriver driver;
+	 static WebDriver driver;
 	
 	@Before
 	public void openBrowser() {
@@ -32,8 +32,13 @@ public class TestBase {
 	}
 
 	@After
-	public void closeBrowser() {
+	public void closeBrowser(){
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
 		
+			e.printStackTrace();
+		}
 		driver.quit();
 	}
 }
