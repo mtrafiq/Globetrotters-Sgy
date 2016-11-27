@@ -1,4 +1,4 @@
-@Positive
+@TC005
 Feature: User is able to Signup as a student using given access code
 
   Scenario: Positive test case
