@@ -33,14 +33,6 @@ public class SchoologyHomePage {
 
 	public CorporatePage clickCorporateLink(){
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		/*
-		WebElement tourLink = driver.findElement(By.xpath("//a[contains(.,'Tour')]"));
-		WebElement corporateLink = driver.findElement(By.xpath("//a[@id='corporate-header']"));
-		
-		Actions action = new Actions(driver);
-		//driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		action.moveToElement(tourLink).moveToElement(corporateLink).click().build().perform();
-			*/
 		
 		WebElement tourLink = driver.findElement(By.linkText("Tour"));
 		WebElement corporateLink = driver.findElement(By.linkText("Corporate"));
@@ -50,8 +42,22 @@ public class SchoologyHomePage {
         action.moveToElement(tourLink).moveToElement(corporateLink).click().build().perform();
         
 		return new CorporatePage(driver);
+	}
+	
+	public SchoologyResourcesPage clickOnResources(){
+		
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.findElement(By.id("resources-header")).click();
+		return new SchoologyResourcesPage(driver);
+	}
+
+	
+		
+		
+		
+		
+		
+		
 		
 	}
 
-
-}

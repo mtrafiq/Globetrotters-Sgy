@@ -14,13 +14,13 @@ public class TestCase001_StepDefinition {
 	SchoologyHomePage schoologyHomePage;
 	CorporatePage corporatePage;
 	
-	
+	/*
 	@Given("^User is on Schoology home page$")
 	public void userIsOnHomePage(){
 		
 		schoologyHomePage = new SchoologyHomePage(driver);
 		schoologyHomePage.checkPageTitle();
-	}
+	}*/
 
 	@When("^User click corporate link by hovering over tour link$")
 	public void userClicksOnCorporateLink(){

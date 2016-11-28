@@ -2,7 +2,7 @@
 Feature: User is able to Request a tour as a corporation
 
   Scenario: Positive test case
-    Given User is on Schoology home page
+    Given User is on home page
     When User click corporate link by hovering over tour link
     And User enters first name and last name "George", "Mason"
     And User selects manager option from job function dropdown

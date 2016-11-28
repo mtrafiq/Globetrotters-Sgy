@@ -13,7 +13,7 @@ import cucumber.api.java.Before;
 
 		features = {"User-Stories"},
 		glue = { "stepDefinition"},
-		tags = { "@TC001" },
+		tags = { "@TC002" },
 		format = { "pretty", "html:target"})
 
 
