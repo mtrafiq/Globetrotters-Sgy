@@ -20,6 +20,10 @@ public class SchoologyHomePage {
   driver.manage().window().maximize();
  }
 
+ public SchoologyLogInPage userClicksLogInButton(){
+	 driver.findElement(By.id("login-header"));
+  return new SchoologyLogInPage(driver);
+}
 
  public void checkPageTitle() {
   driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
